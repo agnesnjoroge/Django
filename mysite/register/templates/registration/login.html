@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block t %}Login{% endblock %}
+
+{% block c %}
+<form method="post" action="#" class="form-group">
+  {% csrf_token %}
+  {{form}}
+  <button type="submit" ,class="btn btn-success">Login</button>
+  <p>Dont have an account yet? Create one <a href="/register">here</a></p>
+</form>
+{% endblock %}
+  
